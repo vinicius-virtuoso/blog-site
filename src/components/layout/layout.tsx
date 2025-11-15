@@ -1,0 +1,19 @@
+import { inter } from "@/lib/fonts";
+import { Footer } from "./footer";
+import { Header } from "./header";
+
+type LayoutProps = {
+  children: React.ReactNode;
+};
+
+export const Layout = ({ children }: LayoutProps) => {
+  return (
+    <div
+      className={`${inter.className} relative flex min-h-screen flex-col bg-gray-700`}
+    >
+      <Header />
+      <main className="flex-1 flex-col mt-10 ">{children}</main>
+      <Footer />
+    </div>
+  );
+};
