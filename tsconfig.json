@@ -27,7 +27,7 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts",
     ".contentlayer/generated"
-
+, "src/components/search/seach.tsx,,,,"
   ],
   "exclude": ["node_modules"]
 }

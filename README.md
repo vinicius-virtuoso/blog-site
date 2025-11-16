@@ -1,40 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Site Blog
 
-## Getting Started
+![Preview](./preview/preview.png)
 
-First, run the development server:
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+Este projeto é uma aplicação web composta por uma landing page e uma rota dedicada a artigos de blog. Ele foi desenvolvido com foco em performance, organização e experiência do usuário, utilizando tecnologias modernas do ecossistema JavaScript.
+
+## 🚀 Tecnologias utilizadas
+- **TypeScript** – Tipagem estática para um código mais seguro e escalável.
+- **Next.js** – Framework React para criação de aplicações web com SSR, SSG e excelente performance.
+- **Contentlayer** – Ferramenta para gerenciamento e tipagem de conteúdo estático, ideal para blogs baseados em Markdown.
+
+## 📌 Funcionalidades
+- Página inicial (Landing Page) apresentando o propósito do projeto.
+- Rota exclusiva para o blog, listando posts gerenciados via Contentlayer.
+- Geração de páginas estáticas dos artigos.
+
+## 📁 Estrutura do Projeto
+```
+/
+├── posts/                  # Arquivos Markdown dos posts
+├── src/
+│   ├── pages/              # Rotas do Next.js
+│   ├── components/         # Componentes reutilizáveis
+│   ├── styles/             # Estilos globais e módulos
+│   └── lib/                # Funções auxiliares
+│   └── templates/          # Secessões separadas por partes do site
+└── contentlayer.config.ts  # Configuração do Contentlayer
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ▶️ Como executar o projeto
+1. Instale as dependências:
+```
+npm install
+```
+2. Execute o servidor de desenvolvimento:
+```
+npm run dev
+```
+3. Acesse no navegador:
+```
+http://localhost:3000
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 🧱 Build para produção
+```
+npm run build
+npm start
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📄 Licença
+Este projeto está sob a licença MIT. Sinta-se à vontade para usar e modificar conforme necessário.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
